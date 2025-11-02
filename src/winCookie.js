@@ -1,20 +1,31 @@
-import keytar from "keytar";
 import { promisified as regedit } from "regedit";
+import { exec } from "child_process";
+import { promisify } from "util";
+import { fileURLToPath } from "url";
+import path from "path";
 
+const execAsync = promisify(exec);
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const COOKIE_NAME = ".ROBLOSECURITY";
+
+async function getFromWinCred(name) {
+  const winCredPath = path.join(__dirname, "wincred.py");
+  return await execAsync(`python "${winCredPath}" "${name}"`).then((result) =>
+    result.stdout.trim()
+  );
+}
 
 export async function getFromStudio() {
   try {
-    const userId = await keytar.findPassword(
+    const userId = await getFromWinCred(
       "https://www.roblox.com:RobloxStudioAuthuserid"
     );
-    const cookie = keytar.findPassword(
+    return await getFromWinCred(
       `https://www.roblox.com:RobloxStudioAuth${COOKIE_NAME}${userId}`
     );
-    return cookie;
-  } catch {}
+  } catch (e) {}
 
-  return await keytar.findPassword(
+  return await getFromWinCred(
     `https://www.roblox.com:RobloxStudioAuth${COOKIE_NAME}`
   );
 }

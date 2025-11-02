@@ -5,6 +5,13 @@ Supports **Windows** and **macOS**, making it ideal for tooling, automation, or 
 
 ---
 
+## ⚙️ Requirements
+
+* **Windows:** Requires **Python 3.0 or higher** (used internally for credential access)
+* **macOS:** No additional dependencies
+
+---
+
 ## ✨ Features
 
 * 🔍 Automatically detects authenticated Roblox Studio sessions
