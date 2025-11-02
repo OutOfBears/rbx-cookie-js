@@ -175,7 +175,7 @@ export async function getFromStudio() {
   try {
     const userIdTarget = "https://www.roblox.com:RobloxStudioAuthuserid";
     const userId = await getCredentialFromManager(userIdTarget);
-    console.log("userid", userId);
+
     if (userId) {
       const modernCookieTarget = `https://www.roblox.com:RobloxStudioAuth${COOKIE_NAME}${userId}`;
       const cookie = await getCredentialFromManager(modernCookieTarget);
