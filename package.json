@@ -4,6 +4,10 @@
   "description": "A lightweight Node.js utility that retrieves the Roblox cookie from your Roblox Studio installation or environment.",
   "main": "index.js",
   "type": "module",
+  "repos": {
+    "type": "git",
+    "url": "https://github.com/outofbears/rbx-cookie-js.git"
+  },
   "scripts": {
     "dev": "node src/index.js",
     "test": "node src/test.js"
