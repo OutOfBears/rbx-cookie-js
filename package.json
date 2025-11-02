@@ -1,0 +1,28 @@
+{
+  "name": "rbx-cookie",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node src/index.js",
+    "test": "node src/test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.6.4",
+  "dependencies": {
+    "keytar": "^7.9.0",
+    "plist": "^3.1.0",
+    "regedit": "^5.1.4"
+  },
+  "pnpm": {
+    "ignoredBuiltDependencies": [
+      "keytar"
+    ],
+    "onlyBuiltDependencies": [
+      "keytar"
+    ]
+  }
+}
