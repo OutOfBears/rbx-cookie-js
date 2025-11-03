@@ -7,8 +7,12 @@ Supports **Windows** and **macOS**, making it ideal for tooling, automation, or 
 
 ## ⚙️ Requirements
 
-* **Windows:** Requires **Python 3.0 or higher** (used internally for credential access)
-* **macOS:** No additional dependencies
+This project uses **[N-API](https://nodejs.org/api/n-api.html)** bindings implemented in **Rust**, so you must have:
+
+- **Rust (≥ 1.70)** installed — [Install Rust here](https://www.rust-lang.org/tools/install)
+- **Node.js (≥ 18)** or **Bun (≥ 1.0)**
+
+> 🪶 On Windows, ensure you have the Rust toolchain and a compatible C++ build environment (e.g. MSVC or GNU).
 
 ---
 
@@ -44,7 +48,7 @@ pnpm add rbx-cookie
 ```js
 import rbxCookie from 'rbx-cookie';
 
-const cookie = await rbxCookie.get();
+const cookie = rbxCookie.get();
 console.log(cookie);
 ```
 
@@ -53,10 +57,8 @@ console.log(cookie);
 ```js
 const rbxCookie = require('rbx-cookie');
 
-(async () => {
-  const cookie = await rbxCookie.get();
-  console.log(cookie);
-})();
+const cookie = rbxCookie.get();
+
 ```
 
 ---
