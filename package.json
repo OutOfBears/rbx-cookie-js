@@ -8,8 +8,8 @@
   "types": "index.d.ts",
   "type": "module",
   "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/outofbears/rbx-cookie.git"
+    "url": "git+ssh://git@github.com/outofbears/rbx-cookie.git",
+    "type": "git"
   },
   "files": [
     "index.d.ts",
