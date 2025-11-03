@@ -3,7 +3,7 @@
 authors = ["Jack Fox <0xdeadbeef1@gmail.com>"]
 edition = "2021"
 name    = "cookie"
-version = "1.2.0"
+version = "1.2.1"
 
 [lib]
 crate-type = ["cdylib"]

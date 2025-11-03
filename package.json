@@ -1,6 +1,6 @@
 {
   "name": "@outofbear/rbx-cookie",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "A lightweight Node.js utility that retrieves the Roblox cookie from your Roblox Studio installation or environment.",
   "author": "Jack Fox <0xdeadbeef1@gmail.com>",
   "license": "MIT",
@@ -94,5 +94,19 @@
     "singleQuote": true,
     "arrowParens": "always"
   },
-  "packageManager": "pnpm@10.6.4"
+  "packageManager": "pnpm@10.6.4",
+  "optionalDependencies": {
+    "@outofbear/rbx-cookie-darwin-x64": "1.2.1",
+    "@outofbear/rbx-cookie-darwin-arm64": "1.2.1",
+    "@outofbear/rbx-cookie-linux-x64-gnu": "1.2.1",
+    "@outofbear/rbx-cookie-win32-x64-msvc": "1.2.1",
+    "@outofbear/rbx-cookie-linux-x64-musl": "1.2.1",
+    "@outofbear/rbx-cookie-linux-arm64-gnu": "1.2.1",
+    "@outofbear/rbx-cookie-win32-ia32-msvc": "1.2.1",
+    "@outofbear/rbx-cookie-linux-arm-gnueabihf": "1.2.1",
+    "@outofbear/rbx-cookie-android-arm64": "1.2.1",
+    "@outofbear/rbx-cookie-linux-arm64-musl": "1.2.1",
+    "@outofbear/rbx-cookie-win32-arm64-msvc": "1.2.1",
+    "@outofbear/rbx-cookie-android-arm-eabi": "1.2.1"
+  }
 }
