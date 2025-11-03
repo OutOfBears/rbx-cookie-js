@@ -1,5 +1,5 @@
 {
-  "name": "@outofbears/rbx-cookie",
+  "name": "@outofbear/rbx-cookie",
   "version": "1.2.0",
   "description": "A lightweight Node.js utility that retrieves the Roblox cookie from your Roblox Studio installation or environment.",
   "author": "Jack Fox <0xdeadbeef1@gmail.com>",
